@@ -1,0 +1,68 @@
+a {
+    text-decoration: none;
+}
+#root {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to top, rgb(15, 23, 42), rgb(16, 185, 129), rgb(3, 105, 161));
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+main {
+    
+    flex-grow: 1;
+}
+
+.animate {
+    animation: load 1s ease-in-out;
+  }
+  
+  .custom-form-control {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .alert {
+    
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+  }
+
+  .alert-success {
+
+    background-color: #dff0d8;
+    color: #3c763d;
+  }
+  
+  .alert-danger {
+    background-color: #f2dede;
+    color: #a94442;
+  }
+  .SearchBtn{
+    border-radius: 30px;
+    width: 100%;
+  }

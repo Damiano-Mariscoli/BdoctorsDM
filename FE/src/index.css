@@ -1,0 +1,391 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.doctor-info {
+    background-color: white;
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+}
+
+.reviews h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+ul {
+
+    padding-left: 50px;
+}
+
+.doctor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+
+.animate-load {
+    animation: load 1s ease-in-out;
+}
+
+.doctor-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3px solid #007bff;
+}
+
+.doctor-card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.doctor-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+.doctor-card strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.doctor-card span {
+    color: #ffb400;
+    font-size: 1.2rem;
+}
+
+
+.review-card {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.review-card .review-author {
+    font-weight: bold;
+}
+
+
+span {
+    color: #ffb400;
+    font-size: 1.2rem;
+}
+
+span svg {
+    margin-right: 5px;
+}
+
+
+.review-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+
+.form-review input,
+.form-review textarea,
+.form-review select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fafafa;
+}
+
+.form-review textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.form-review button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* HomePage */
+.animate {
+    animation: load 0.8s ease-in-out;
+}
+
+
+
+@keyframes load {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.backgroundHomePage {
+    animation: load 0s ease-in-out;
+    width: 100%;
+    scale: 1/1;
+    height: 500px;
+    object-fit: cover;
+    transform: scaleX(-1);
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.bgCaption {
+    color: #0f3439;
+    width: 27%;
+    position: absolute;
+    left: 58%;
+    top: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.9);
+    white-space: nowrap;
+}
+
+
+@media (min-width: 768px) {
+    .bgCaption {
+        right: 60px;
+        text-align: right;
+    }
+}
+
+@media (max-width: 1200px) {
+    .bgCaption {
+        position: absolute;
+        left: 65%;
+        transform: translateX(-50%);
+        text-align: center;
+
+        width: 100vw;
+
+    }
+}
+
+@media (max-width: 1000px) {
+    .bgText {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .bgCaption {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 10px;
+        width: 100vw;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .bgText {
+        font-size: 15px;
+    }
+}
+
+.doctorCaption {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Card */
+
+.cardD:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.cardD:not(:hover) {
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+
+    .cardD {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+
+
+/* SearchPage */
+
+.filterBar {
+    border: 1px solid white;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+
+.searchSelect:hover {
+    border-radius: 50px;
+    background-color: rgb(231, 231, 231);
+    transition: all 0.3s ease-in-out;
+}
+
+.searchSelect:not(:hover) {
+
+    transition: all 0.3s ease-in-out;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links,
+.footer-social {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul,
+.footer-social ul {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links li,
+.footer-social li {
+    display: inline;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+/* About */
+
+.doctors-page {
+    background-image: linear-gradient(to top, rgb(15, 23, 42), rgb(16, 185, 129), rgb(3, 105, 161));
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.doctors-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+}
+
+.doctors-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.doctors-header h1 {
+    font-size: 2.5rem;
+}
+
+.doctors-header p {
+    font-size: 1.2rem;
+}
+
+.doctors-content h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.doctors-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.doctors-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.doctors-content ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.doctors-content ul li strong {
+    font-weight: bold;
+}

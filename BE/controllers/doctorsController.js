@@ -189,12 +189,13 @@ function storeDoctor(req, res) {
   if (Object.keys(errors).length > 0) {
     return res.status(400).json({ errors });
   }
+  const slug = `${first_name.toLowerCase()}-${last_name.toLowerCase()}-${Date.now()}`;
 
   const image = req.files["image"] ? req.files["image"][0].filename : null;
   const cv = req.files["cv"] ? req.files["cv"][0].filename : null;
 
   const sql =
-    "INSERT INTO doctors (first_name, last_name, address, email, phone, spec, description, image, cv) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    "INSERT INTO doctors (first_name, last_name, address, email, phone, spec, description, image, cv, slug) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
   connection.query(
     sql,
     [

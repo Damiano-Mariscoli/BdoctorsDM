@@ -12,7 +12,7 @@ const pool = mysql.createPool({
 });
 
 setInterval(() => {
-  connection.query("SELECT 1", (pingErr) => {
+  pool.query("SELECT 1", (pingErr) => {
     if (pingErr) {
       console.error("Errore nel ping:", pingErr);
     } else {

@@ -208,6 +208,7 @@ function storeDoctor(req, res) {
       description,
       image,
       cv,
+      slug,
     ],
     (err, results) => {
       if (err) {

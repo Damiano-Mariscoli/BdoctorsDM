@@ -63,7 +63,7 @@ export default function HomePage() {
           backgroundSize: "cover", // Adatta l'immagine per coprire l'intero div
           backgroundPosition: "center", // Centra l'immagine
           //backgroundRepeat: "no-repeat", // Evita la ripetizione dell'immagine
-          width: "100vw", // 100% della larghezza della viewport
+          // 100% della larghezza della viewport
           height: "700px", // Altezza fissa di 400px
         }}
         className="mb-5 d-md-block d-none bgImage"

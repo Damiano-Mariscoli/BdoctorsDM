@@ -12,7 +12,7 @@ export default function DefaultLayout() {
     <>
       <Header />
       <main style={{ minHeight: "80vh", height: "100%" }}>
-        <Outlet />
+        <Outlet classname="animate" />
       </main>
       <Footer />
       {isLoading && <Loader />}

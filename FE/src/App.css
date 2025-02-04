@@ -66,3 +66,14 @@ main {
     border-radius: 30px;
     width: 100%;
   }
+
+  @media (max-width: 992px) {
+    .navbar-expand-md {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .nav-link{
+    display: flex;
+    justify-content: end;
+  }

@@ -7,7 +7,11 @@ import { NavLink } from "react-router";
 export default function Header() {
   return (
     <div className="h-200">
-      <Navbar className="mb-auto" data-bs-theme="dark" expand="md">
+      <Navbar
+        className="mb-auto ms-auto navbar-expand-md animate"
+        data-bs-theme="dark"
+        expand=""
+      >
         <Container>
           <Navbar.Brand
             as={NavLink}
@@ -19,7 +23,7 @@ export default function Header() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
-            <Nav className="ms-auto">
+            <Nav className="ms-auto animate">
               <Nav.Link as={NavLink} to="/" className="nav-link">
                 Home
               </Nav.Link>
@@ -27,7 +31,7 @@ export default function Header() {
                 Search
               </Nav.Link>
               <Nav.Link as={NavLink} to="/doctor/register" className="nav-link">
-                Register
+                Sign In
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

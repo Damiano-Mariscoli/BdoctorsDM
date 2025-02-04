@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      {
+        "source": "/doctor/:match*",
+        "destination": "/api/doctor/:match*"
+      }
+    ]
+  }

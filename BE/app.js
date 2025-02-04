@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = parseInt(process.env.PORT) || 3000;
+const port = parseInt(process.env.PORT) || 3306;
 const doctorsRouter = require("./routers/doctorsRouter");
 const cors = require("cors");
 const errorsHandler = require("./middlewares/errorsHandler");
